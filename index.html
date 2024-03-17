@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            overflow-x: hidden;
+        }
+
+        .hamburger {
+            display: none;
+        }
+
+        .container1 {
+            width: 100%;
+            height: 70px;
+            margin-top: -110px;
+            opacity: 1;
+            background-color: #b94c4c;
+            position: fixed;
+        }
+
+        nav,
+        ul {
+            direction: rtl;
+            display: flex;
+            list-style-type: none;
+            width: 1010px;
+            font: normal normal normal 25px/37px Heebo;
+            letter-spacing: 0px;
+            color: #2C2C2C;
+            gap: 30px;
+            margin-left: 120px;
+            margin-top: 10px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: aqua;
+        }
+
+        ul li:hover {
+            transform: scale(1.1);
+        }
+
+        .profile img {
+            width: 62px;
+            height: 62px;
+            border-radius: 31px;
+            opacity: 1;
+            margin-top: -105px;
+            margin-left: 10%;
+        }
+
+        #me p {
+            width: 50px;
+            height: 25px;
+            opacity: 1;
+            margin-top: -100px;
+            margin-left: 20%;
+            font-family: 'Dancing Script';
+        }
+
+
+        .container2 {
+            width: 100%;
+            height: 500px;
+            background: navajowhite 0% 0% no-repeat padding-box;
+            opacity: 1;
+            color: #2C2C2C;
+            text-align: center;
+            margin-top: -10px;
+        }
+
+        h1 {
+            width: 504px;
+            height: 60px;
+            text-align: center;
+            padding: 70px;
+            font: normal normal 900 80px/118px Heebo;
+            letter-spacing: 0px;
+            color: crimson;
+            opacity: 1;
+            margin: 120px auto;
+        }
+
+        p {
+            margin: 100px auto;
+            font-size: 1.5rem;
+        }
+
+        article {
+            width: 100%;
+            height: 100px;
+            direction: rtl;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 0px 3px 6px #00000029;
+            text-align: center;
+        }
+
+        .img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .container3 {
+            width: 100%;
+            height: 700px;
+            margin-top: -50px;
+            background-color: khaki;
+        }
+
+        #pic {
+            width: 141px;
+            height: 139px;
+            margin-top: 30px;
+            background: transparent url('img/profile-image.png') 0% 0% no-repeat padding-box;
+            border-radius: 145px;
+        }
+
+        #imfor {
+            margin: 80px;
+            margin-right: 200px;
+            margin-left: 600px;
+        }
+
+        h2 {
+            width: 132px;
+            height: 52px;
+            text-align: right;
+            font: normal normal 900 35px/52px Heebo;
+            letter-spacing: 0px;
+            color: #1AE0EC;
+            margin-right: 200px;
+            margin-left: 600px;
+        }
+
+        #article {
+            width: 798px;
+            height: 232px;
+            text-align: center;
+            font: normal normal normal 20px/29px Heebo;
+            letter-spacing: 0px;
+            color: tomato;
+            width: 500px;
+            height: 200px;
+            margin-right: 200px;
+            margin-left: 430px;
+        }
+
+        #btn {
+            width: 260px;
+            height: 41px;
+            background-color: darkolivegreen;
+            border-radius: 25px;
+            margin: 100px;
+            margin-left: 550px;
+        }
+
+        .container4 {
+            width: 100%;
+            height: 1450px;
+            background-color: indianred;
+        }
+
+        .container4 p {
+            margin-left: 10%;
+            color: beige;
+        }
+
+        .card {
+            position: static;
+            color: khaki;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+        }
+
+        .two {
+            margin-top: 30px;
+        }
+
+        .container5 {
+            background-color: #3A3A3A;
+            width: 100vw;
+            height: 700px;
+            background-image: url(email.png);
+            background-repeat: no-repeat;
+            color: wheat;
+        }
+
+        h3,
+        .container5 p,
+        label {
+            direction: rtl;
+            margin-right: 140px;
+        }
+
+        h3 {
+            line-height: 50px;
+        }
+
+        .container5 p {
+            margin-top: 50px;
+        }
+
+        .input,
+        .input-two,
+        label {
+            display: flex;
+            flex-direction: column;
+            margin-left: 70%;
+        }
+
+        .input {
+            width: 20vw;
+            height: 40px;
+        }
+
+        .input-two {
+            width: 20vw;
+            height: 80px;
+        }
+
+        button {
+            background-color: seagreen;
+            color: whitesmoke;
+            width: 100px;
+            height: 40px;
+            margin-top: 10px;
+            margin-left: 82.5vw;
+        }
+
+        footer {
+            background-color: #1AE0EC;
+            height: 250px;
+            width: 100vw;
+            margin-top: -100px;
+            border-bottom: 40px solid black;
+        }
+
+        .section {
+            width: 16%;
+            height: 200px;
+            margin-top: 30px;
+            float: left;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .section img {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+
+        .section p {
+            font-size: 1rem;
+            margin-top: 0;
+        }
+
+        #first-p {
+            width: 160px;
+            height: 20px;
+            font-size: 1rem;
+            margin-left: 40px;
+            color: aquamarine;
+        }
+
+        #second-p {
+            width: 160px;
+            height: 20px;
+            font-size: 1rem;
+            margin-right: 60px;
+            color: aquamarine;
+        }
+
+        @media screen and (max-width: 576px) {
+            body {
+                overflow-x: hidden;
+            }
+
+            .container1 {
+                position: static;
+                margin-top: -10px;
+            }
+
+            nav {
+                width: 100vw;
+            }
+
+            ul li {
+                width: 50px;
+                height: 10px;
+                font-size: 1rem;
+                display: none;
+            }
+
+            .hamburger {
+                display: block;
+                margin-right: 160px;
+                margin-top: 10px;
+                color: aqua;
+                cursor: pointer;
+            }
+
+            .hamburger:hover+ul li {
+                display: inline-block;
+            }
+
+            .profile {
+                margin-top: 130px;
+                margin-left: 10px;
+                width: 30px;
+            }
+
+            #me {
+                margin-left: 10px;
+            }
+
+            .container2 {
+                height: 600px;
+                margin-top: -100px;
+            }
+
+            h1 {
+                font-size: 3.5rem;
+                margin-left: -20px;
+            }
+
+            .container2 p {
+                font-size: 1.5rem;
+                margin-left: 10px;
+            }
+
+            article {
+                width: 100vw;
+                height: 150px;
+            }
+
+            .img {
+                width: 70px;
+                height: 70px;
+                margin-top: -30px;
+            }
+
+            #imfor {
+                width: 80px;
+                height: 80px;
+                margin-left: 160px;
+            }
+
+            .container3 {
+                height: 600px;
+            }
+
+            .container3 h2 {
+                margin-left: 160px;
+                line-height: 200px;
+            }
+
+            #article {
+                margin-left: 30px;
+                font-size: 1rem;
+                text-align: center;
+                margin-top: 100px;
+                width: 90vw;
+            }
+
+            #btn {
+                margin-left: 100px;
+                margin-top: -100px;
+            }
+
+            .container4 {
+                height: 950px;
+            }
+
+            .container4 h2 {
+                margin-left: 150px;
+            }
+
+            .container4 p {
+                font-size: 1rem;
+                margin-top: 50px;
+                color: beige;
+            }
+
+            .card {
+                height: 300px;
+                color: pink;
+            }
+
+            .card p {
+                font-size: 12px;
+                margin-top: 10px;
+            }
+
+            .btn {
+                margin-top: -60px;
+                font-size: 10px;
+            }
+
+            .my {
+                margin-top: -40px;
+            }
+
+            .container5 {
+                background-size: contain;
+            }
+
+            .container5 h3 {
+                margin-right: 20px;
+            }
+
+            .container5 p {
+                font-size: 16px;
+                margin-right: 20px;
+            }
+
+            label {
+                margin-right: 50px;
+            }
+
+            .input,
+            .input-two {
+                width: 70vw;
+                margin-left: 20%;
+            }
+
+            .container5 button {
+                margin-left: 67%;
+            }
+
+            footer {
+                height: 200px;
+                border-bottom: 5px solid black;
+            }
+
+            .section img {
+                width: 20px;
+                height: 20px;
+            }
+
+            .section p {
+                font-size: 10px;
+            }
+
+            #first-p,
+            #second-p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <nav>
+            <div class="hamburger">&#9776</div>
+            <ul>
+                <li id="main"><a href="#first">ראשי</a></li>
+                <li><a href="#info">אודות</a></li>
+                <li><a href="#service">שירותים</a></li>
+                <li> <a href="#contact">צור קשר </a></li>
+            </ul>
+        </nav>
+        <div class="profile"><img src="./Files/MyProfile.jpg" alt="profile"></div>
+        <div id="me">
+            <p>Matan Zohar</p>
+        </div>
+    </div>
+    <div class="container2" id="first">
+        <h1>תיק עבודות</h1>
+        <p>עמוד זה מכיל את הפרויקטים שהכנתי, מידע על עצמי ודרכי תקשורת </p>
+    </div>
+
+    <article>
+        <img class="img" src="./Files/img-NodeJS.png" alt="node"><img class="img" src="./Files/img-React.png"
+            alt="react">
+        <img src="./Files/img-API.png" alt="api">
+        <img class="img" src="./Files/img-TypeScript.png" alt="type"><img class="img" src="./Files/img-ES6.png"
+            alt="es"><img class="img" src="./Files/img-OOP.png" alt="oop"><img class="img" src="./Files/img-JS.png"
+            alt="js"><img class="img" src="./Files/img-SASS.png" alt="sass"><img class="img"
+            src="./Files/img-Bootstrap.png" alt="boots"><img class="img" src="./Files/img-CSS.png" alt="css"><img
+            class="img" src="./Files/img-HTML.png" alt="html">
+    </article>
+
+    <div class="container3" id="info">
+        <div id="imfor"><img id="pic" src="./Files/MyProfile.jpg" alt="profile"></div>
+        <h2>קצת עליי</h2>
+        <div id="article">שמי מתן זוהר, אני בן 20 ולומד במכללת "האקריו" קורס בניית אתרים. <br> אני בחור שאוהב ללמוד
+            ושואף להגיע להישגים מרשימים, ואני חושב שדרך הלימודים במכללה אוכל להתקדם טוב בהמשך.<br> בפרויקט זה בניתי שישה
+            דפי
+            נחיתה ומקווה שתהנו מצפייה בהם
+        </div>
+        <button id="btn"> <a href="AllJobs_מתן_זוהר_23-9-23_1.docx" download="AllJobs_מתן_זוהר_23-9-23_1"></a>להורדת
+            קורות
+            חיים</button>
+    </div>
+
+    <div class="container4" id="service">
+        <h2>עבודות נבחרות</h2>
+        <p>לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכה, בתחום.</p>
+
+        <div class="container d-flex justify-content-evenly">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body bg-success">
+                    <h5 class="card-title">Index Project</h5>
+                    <img src="./Files/morning.png" class="card-img-top" alt="Index">
+                    <p class="card-text text-body-secondary">Here Is The Index Page Introduction. Click Bellow To Visit
+                    </p>
+                    <a href="./CSSprojects/project5int/index.html" class="btn d-grid btn-secondary mbtn">Go To Index</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+
+                <div class="card-body bg-warning">
+                    <h5 class="card-title text-secondary">Index2 Project</h5>
+                    <img src="./Files/giveus.png" class="card-img-top" alt="Index2">
+                    <p class="card-text text-light-emphasis">Here Is The Index2 Page Introduction. Click Bellow To Visit
+                    </p>
+                    <a href="./CSSprojects/project1int/project.index2.html" class="btn d-grid btn-primary mbtn">Go To
+                        Index2</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+
+                <div class="card-body bg-danger">
+                    <h5 class="card-title text-success-emphasis">Bootstrap Project</h5>
+                    <img src="./Files/bootstrap.png" class="card-img-top" alt="Bootstrap">
+                    <p class="card-text text-primary">Here Is The Bootstrap Page Introduction. Click Bellow To
+                        Visit</p>
+                    <a href="./CSSprojects/project3int/index.html" class="btn d-grid btn-dark mbtn">Go To Bootstrap</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container d-flex justify-content-evenly">
+            <div class="card two" style="width: 18rem;">
+
+                <div class="card-body bg-dark-subtle">
+                    <h5 class="card-title text-danger">Discover Project</h5>
+                    <img src="./Files/here&now.png" class="card-img-top" alt="discover">
+                    <p class="card-text text-success">Here Is The Discover Page Introduction. Click Bellow To Visit</p>
+                    <a href="./CSSprojects/project2int/projectdiscover.html" class="btn d-grid btn-dark mbtn">Go To
+                        Discover</a>
+                </div>
+            </div>
+
+            <div class="card two" style="width: 18rem;">
+
+                <div class="card-body bg-dark">
+                    <h5 class="card-title text-success">My Page Project</h5>
+                    <img src="./Files/coding.png" class="card-img-top" alt="Coding">
+                    <p class="card-text text-danger">Here Is My Page Introduction. Click Bellow To Visit</p>
+                    <a href="./CSSprojects/project4int/projectmypage.html" class="btn d-grid btn-success mbtn my">Go To
+                        My
+                        Page</a>
+                </div>
+            </div>
+
+            <div class="card two" style="width: 18rem;">
+
+                <div class="card-body bg-secondary">
+                    <h5 class="card-title text-info">SASS Project</h5>
+                    <img src="./Files/think.png" class="card-img-top" alt="Think">
+                    <p class="card-text">Here Is The SASS Page Introduction. Click Bellow To Visit</p>
+                    <a href="./CSSprojects/project6int/projectsass.html" class="btn d-grid btn-danger mbtn">Go To
+                        SASS</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="containerJS" id="service">
+        <h2>עבודות נבחרות</h2>
+        <p>לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכה, בתחום.</p>
+
+        <div class="container d-flex justify-content-evenly">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body bg-success">
+                    <h5 class="card-title">Index Project</h5>
+                    <img src="./Files/clock.png" class="card-img-top" alt="Index">
+                    <p class="card-text text-body-secondary">Here Is The clock project. Click Bellow To Visit
+                    </p>
+                    <a href="./projectsJS/clock/index.html" class="btn d-grid btn-secondary mbtn">Go To Project</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+
+                <div class="card-body bg-warning">
+                    <h5 class="card-title text-secondary">Index2 Project</h5>
+                    <img src="./Files/userManagement.png" class="card-img-top" alt="Index2">
+                    <p class="card-text text-light-emphasis">Here Is The user management project. Click Bellow To Visit
+                    </p>
+                    <a href="./projectsJS/user-management/index.html" class="btn d-grid btn-primary mbtn">Go To
+                        Project</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+
+                <div class="card-body bg-danger">
+                    <h5 class="card-title text-success-emphasis">Bootstrap Project</h5>
+                    <img src="./Files/pageBuilder.jpg" class="card-img-top" alt="Bootstrap">
+                    <p class="card-text text-primary">Here Is The page builder project. Click Bellow To
+                        Visit</p>
+                    <a href="./projectsJS/page-builder/index.html" class="btn d-grid btn-dark mbtn">Go To Project</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container d-flex justify-content-evenly">
+            <div class="card two" style="width: 18rem;">
+
+                <div class="card-body bg-dark-subtle">
+                    <h5 class="card-title text-danger">Discover Project</h5>
+                    <img src="./Files/coolBackground.jpg" class="card-img-top" alt="discover">
+                    <p class="card-text text-success">Here Is The rock&paper&scissors project. Click Bellow To Visit</p>
+                    <a href="./projectsJS/rock-paper-scissors/index.html" class="btn d-grid btn-dark mbtn">Go To
+                        Project</a>
+                </div>
+            </div>
+
+            <div class="card two" style="width: 18rem;">
+
+                <div class="card-body bg-dark">
+                    <h5 class="card-title text-success">My Page Project</h5>
+                    <img src="./Files/colorfull.jpg" class="card-img-top" alt="Coding">
+                    <p class="card-text text-danger">Here Is calculator project. Click Bellow To Visit</p>
+                    <a href="./projectsJS/calculator/calculator.html" class="btn d-grid btn-success mbtn my">Go To
+                        Project</a>
+                </div>
+            </div>
+
+            <div class="card two" style="width: 18rem;">
+
+                <div class="card-body bg-secondary">
+                    <h5 class="card-title text-info">SASS Project</h5>
+                    <img src="./Files/simonImage.jpeg" class="card-img-top" alt="Think">
+                    <p class="card-text">Here Is The SASS Page Introduction. Click Bellow To Visit</p>
+                    <a href="./projectsJS/simon/index.html" class="btn d-grid btn-danger mbtn">Go To Project</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container5" id="contact">
+        <h3>צור קשר</h3>
+        <p>לורם איפסום או בקיצור ליפסום, הוא מלל <br> מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכה, בתחום.</p>
+
+        <form>
+            <label for="">שם מלא</label>
+            <input type="text" class="input">
+
+            <label for="">דוא''ל</label>
+            <input type="text" class="input">
+
+            <label for="">טלפון</label>
+            <input type="text" class="input">
+
+            <label for="">תוכן הודעה</label>
+            <input type="text" class="input-two">
+
+            <button>שליחה</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="section">
+            <img src="./Files/location.png" alt="location">
+            <p>lorem</p>
+        </div>
+
+        <div class="section">
+            <img src="./Files/at.png" alt="at">
+            <p>lorem</p>
+        </div>
+
+        <div class="section">
+            <img src="./Files/Icon awesome-whatsapp.png" alt="whatsapp">
+            <p>058111111</p>
+        </div>
+
+        <div class="section">
+            <img src="./Files/telephone-fill.svg" alt="call">
+            <p>0581111111</p>
+        </div>
+
+        <div class="section">
+            <img src="./Files/linkedin.svg" alt="linkedin">
+            <p>lorem</p>
+        </div>
+
+        <div class="section">
+            <img src="./Files/facebook.svg" alt="facebook">
+            <p>lorem</p>
+        </div>
+
+        <p id="first-p">Matan Zohar</p>
+        <p id="second-p">כל הזכויות שמורות</p>
+
+    </footer>
+
+</body>
+
+</html>
