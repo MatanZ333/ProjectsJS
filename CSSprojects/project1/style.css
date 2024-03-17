@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+.container1 {
+    width: 100%;
+    margin-top: -310px;
+    height: 743px;
+    background: transparent url(Path\ 15.png) no-repeat padding-box;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    width: 868px;
+    height: 113px;
+    text-align: right;
+    font: normal normal bold 86px/113px Assistant;
+    letter-spacing: 0px;
+    color: #D3E10E;
+    margin: auto;
+}
+
+#head {
+    margin-top: 200px;
+}
+
+#first-paragraph {
+    width: 721px;
+    height: 26px;
+    text-align: center;
+    font: normal normal normal 20px/26px Assistant;
+    letter-spacing: 0px;
+    color: #F9F9F9;
+    margin: auto;
+}
+
+.footer {
+    width: 100%;
+    height: 200px;
+    direction: rtl;
+    display: flex;
+    align-items: center;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 100px;
+    padding: 20px;
+    direction: rtl;
+    margin: 20px;
+    margin-right: 320px;
+}
+
+.inputbox {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 100px;
+    padding: 20px;
+    margin: 20px;
+    margin-right: 5px;
+    direction: rtl;
+}
+
+input {
+    height: 30px;
+    border-bottom: 3px solid #D3E10E;
+    background: #F6F6F6 0% 0% no-repeat padding-box;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    background: #D3E10E 0% 0% no-repeat padding-box;
+    margin: 57px;
+    margin-right: 10px;
+}
+
+#second-paragraph {
+    width: 59px;
+    height: 28px;
+    text-align: right;
+    font: normal normal bold 22px/30px Assistant;
+    letter-spacing: 0.33px;
+    color: #011560;
+}
+
+@media screen and (max-width: 560px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        overflow: hidden;
+    }
+
+    .container1 {
+        width: 500px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin-right: 500px;
+    }
+
+    #first-paragraph {
+        font-size: 1rem;
+        width: 300px;
+    }
+
+    .footer {
+        width: 500px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input {
+        width: 50%;
+        margin-left: 60%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        height: 40px;
+    }
+
+    .inputbox {
+        height: 40px;
+        margin-right: 8%;
+        width: 50%;
+    }
+
+    button {
+        width: 43%;
+        margin-top: 20px;
+        height: 50px;
+        margin-right: 15%;
+    }
+}

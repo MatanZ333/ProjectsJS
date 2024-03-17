@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+.up {
+    width: 30vw;
+    height: 15px;
+    margin-top: 0;
+    margin-left: 70%;
+    background-color: yellow;
+}
+
+.down {
+    width: 40vw;
+    height: 12px;
+    margin-left: 0;
+    margin-top: -30px;
+    background-color: yellow;
+}
+
+.container {
+    direction: rtl;
+}
+
+#iphone {
+    width: 450px;
+    height: 500px;
+    margin-top: 100px;
+}
+
+h1 {
+    text-align: right;
+    margin-top: 170px;
+}
+
+p {
+    text-align: right;
+}
+
+input {
+    background-color: #E5EEFF;
+    width: 200px;
+    height: 40px;
+    border-bottom: 5px solid yellow;
+}
+
+#whatsapp {
+    margin-top: 30px;
+    margin-right: 40px;
+}
+
+#text {
+    width: 508px;
+    height: 80px;
+}
+
+button {
+    width: 120px;
+    height: 50px;
+    background: #FDBD03 0% 0% no-repeat padding-box;
+    margin-top: 20px;
+}
+
+.two,
+button {
+    display: block;
+}
+
+.box {
+    direction: rtl;
+}
+
+.bg-warning {
+    width: 40px;
+    height: 40px;
+    margin-top: 200px;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+.first {
+    margin-right: 530px;
+    cursor: pointer;
+}
+
+.second {
+    margin-right: 575px;
+    margin-top: -70px;
+    cursor: pointer;
+}
+
+.third {
+    margin-right: 620px;
+    margin-top: -117px;
+    cursor: pointer;
+}
+
+#face {
+    margin-top: 420px;
+    margin-left: 90px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:560px) {
+    body {
+        overflow-y: auto;
+    }
+
+    #iphone {
+        width: 180px;
+        height: 200px;
+        margin-top: 40px;
+        margin-right: 120px;
+    }
+
+    h1 {
+        margin-top: 10px;
+        margin-right: 70px;
+        font: normal normal 900 65px/80px Heebo;
+    }
+
+    p {
+        font: normal normal normal 25px/35px Heebo;
+        margin-right: 30px;
+    }
+
+    .one,
+    .two {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        margin-right: 40px;
+    }
+
+    input,
+    #text {
+        width: 80vw;
+        margin-right: 35px;
+    }
+
+    #text {
+        margin-right: -1px;
+    }
+
+    button {
+        width: 80vw;
+        margin-right: 35px;
+    }
+
+
+    .first {
+        display: flex;
+        margin-right: 80px;
+        margin-top: 10px;
+    }
+
+    .second {
+        display: flex;
+        margin-right: 130px;
+        margin-top: -40px;
+    }
+
+    .third {
+        margin-top: -70px;
+        margin-right: 180px;
+    }
+
+    #whatsapp {
+        display: flex;
+        margin-right: 230px;
+        margin-top: -64px;
+    }
+
+    #face {
+        display: flex;
+        margin-right: 280px;
+        margin-top: -40px;
+    }
+
+    .up {
+        width: 80vw;
+        margin-left: 100px;
+    }
+
+    .down {
+        width: 100vw;
+        margin-top: 5px;
+    }
+
+}

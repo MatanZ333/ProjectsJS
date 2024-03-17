@@ -1,0 +1,227 @@
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    background-color: $bgc;
+}
+
+h1 {
+    font-size: $headSize;
+    margin-left: 600px;
+    line-height: 80px;
+    margin-top: -80px;
+}
+
+.container p {
+    text-align: right;
+    margin-left: 250px;
+    width: 600px;
+    height: 150px;
+    justify-content: center;
+}
+
+#whatsapp {
+    background-color: $bgc2;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 40px;
+}
+
+#box {
+    width: 170px;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    margin-left: 70%;
+    margin-top: 40px;
+}
+
+.section {
+    width: 25%;
+    height: 200px;
+    margin-top: 30px;
+    float: left;
+    padding: 10px;
+    background-color: $bgc3;
+    text-align: center;
+}
+
+.section img {
+    width: 40px;
+    height: 40px;
+}
+
+h3 {
+    color: $textColor;
+}
+
+.container3 {
+    width: 100vw;
+    height: 400px;
+}
+
+#form {
+    height: 700px;
+    width: 35vw;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: $bgc4;
+    line-height: 70px;
+}
+
+.container3 h1 {
+    font-size: 2rem;
+    margin: auto;
+}
+
+.container3 p {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.input {
+    height: 40px;
+    border-bottom: 3px solid $bgc;
+    width: 50%;
+    margin-top: 35px;
+}
+
+.input-t {
+    height: 80px;
+    width: 50%;
+    border-bottom: 3px solid $bgc;
+    margin-top: 35px;
+}
+
+button {
+    width: 50%;
+    background-color: $bgc;
+    height: 40px;
+}
+
+span {
+    display: flex;
+    flex-direction: column;
+    height: 10px;
+    margin-right: 140px;
+    text-align: right;
+}
+
+.box {
+    width: 65vw;
+    margin-right: 0;
+    height: 620px;
+    border: 1px solid #000;
+    float: left;
+    background-color: $bgc;
+}
+
+.in-box {
+    background: transparent url("maps.png") 0% 0% no-repeat padding-box;
+    width: 800px;
+    height: 800px;
+    margin: 50px 130px;
+}
+
+
+.last img {
+    width: 50px;
+    height: 50px;
+    background-color: $bgc;
+    border-radius: 20%;
+    margin-top: 50px;
+    margin-right: 15px;
+    padding: 5px;
+}
+
+.last-t {
+    margin-top: 165px;
+    border-bottom: 12px solid $bgc;
+}
+
+@media screen and (max-width: 570px) {
+    .container {
+        width: 100%;
+        height: 400px;
+    }
+
+    .container h1 {
+        line-height: 100px;
+        margin-left: 140px;
+        font-size: 2rem;
+    }
+
+    .container p {
+        width: 200px;
+        margin-left: 100px;
+    }
+
+    #whatsapp {
+        display: none;
+    }
+
+    #box {
+        width: 120px;
+        height: 120px;
+        margin-top: 3px;
+    }
+
+    .section {
+        width: 90%;
+        height: 180px;
+        margin-left: 20px;
+    }
+
+    .section p {
+        width: 150px;
+        margin-left: 120px;
+    }
+
+    #form {
+        width: 100%;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .input,
+    .input-t,
+    button {
+        width: 80%;
+    }
+
+    .input-t {
+        height: 120px;
+    }
+
+    span {
+        margin-right: 50px;
+    }
+
+    .box {
+        width: 100%;
+        height: 450px;
+    }
+
+    .in-box {
+        margin-left: 25px;
+        background-image: url(maps2.png);
+        height: 350px;
+    }
+
+
+    .last img {
+        margin-left: 40px;
+        margin-top: 50px;
+    }
+
+    .last-t {
+        border-bottom: 12px solid $bgc;
+        margin-top: -10px;
+        height: 50px;
+    }
+
+}
