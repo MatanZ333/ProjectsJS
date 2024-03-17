@@ -1,0 +1,68 @@
+body {
+    background-image: url('coolBackground.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#gameDiv {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 3px solid;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: goldenrod;
+    text-align: center;
+    margin: 0 auto;
+    height: 80%;
+    width: 700px;
+}
+
+.choiceBtn {
+    line-height: 30px;
+    width: 150px;
+}
+
+.choiceBtn:hover {
+    cursor: pointer;
+    background-color: gainsboro;
+}
+
+#playerText {
+    color: red;
+}
+
+#computerText {
+    color: blue;
+}
+
+#resultText {
+    color: yellow;
+}
+
+#gameResults {
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    color: aquamarine;
+    margin: auto 0;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+#clear {
+    background-color: firebrick;
+    color: aquamarine;
+    width: 200px;
+    height: 50px;
+    line-height: 30px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 43%;
+    border-radius: 5px;
+}
+
+#clear:hover {
+    background-color: sandybrown;
+    color: brown;
+    cursor: pointer;
+}

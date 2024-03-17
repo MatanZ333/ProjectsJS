@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+    <div id="first">
+        <h1>Local Clock</h1>
+        <h3 id="timeHeadline">The Time</h3>
+        <form name="forme">
+            <input id="inputClock" type="text" name="clock">
+        </form>
+        <input id="inputStart" type="button" value="start" onclick="start()">
+        <input id="inputStop" type="button" value="stop" onclick="stop()">
+    </div>
+
+    <div id="timeContainer">
+        <div id="timeDisplay">00:00:00</div>
+        <button id="startBtn" class="timerBtn">Start</button>
+        <button id="pauseBtn" class="timerBtn">Pause</button>
+        <button id="resetBtn" class="timerBtn">Reset</button>
+    </div>
+
+    <div id="globalClocks">
+        <h1>Global Clock</h1>
+
+        <div id="aroundNY">
+            <p id="newYorkPara">New York</p>
+            <div class="divClock" id="clockNew"></div>
+        </div>
+
+        <div id="aroundTokyo">
+            <p id="tokyoPara">Tokyo Time</p>
+            <div class="divClock" id="clockTokyo"></div>
+        </div>
+
+        <div id="aroundShanghai">
+            <p id="shanghaiPara">Shanghai Time</p>
+            <div class="divClock" id="clockShanghai"></div>
+        </div>
+
+        <div id="aroundSydney">
+            <p id="sydneyPara">Sydney Time</p>
+            <div class="divClock" id="clockSydney"></div>
+        </div>
+
+    </div>
+</body>
+
+</html>

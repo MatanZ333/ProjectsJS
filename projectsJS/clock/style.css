@@ -1,0 +1,226 @@
+body {
+    background-image: url('clock.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#first {
+    width: 530px;
+    height: 530px;
+    margin-top: 50px;
+    border: 2px solid lightblue;
+    border-radius: 20%;
+    background-image: url('colorful.avif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: greenyellow;
+    text-align: center;
+}
+
+h1 {
+    color: hotpink;
+    font-size: 50px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.timerBtn {
+    width: 45px;
+    height: 25px;
+    border: 2px solid;
+    border-radius: 12px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin-top: 30px;
+    font-family: consolas, monospace;
+}
+
+#timeDisplay {
+    font-size: 20px;
+    color: green;
+    font-family: consolas, monospace;
+}
+
+#timeContainer {
+    align-items: center;
+    border: 2px solid;
+    background-color: black;
+    color: whitesmoke;
+    margin-left: 43%;
+    margin-top: -100px;
+    text-align: center;
+    align-items: center;
+    width: 200px;
+    height: 150px;
+}
+
+#aroundNY {
+    border: 5px solid black;
+    border-radius: 5px;
+    background-color: gold;
+    color: black;
+    font-size: 25px;
+    width: 190px;
+    height: 150px;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+#aroundTokyo {
+    border: 5px solid black;
+    background-color: yellowgreen;
+    color: black;
+    font-size: 25px;
+    border-radius: 5px;
+    width: 190px;
+    height: 150px;
+    margin-right: 300px;
+    margin-top: -160px;
+}
+
+#aroundShanghai {
+    border: 5px solid black;
+    background-color: teal;
+    color: black;
+    font-size: 25px;
+    border-radius: 5px;
+    width: 190px;
+    height: 150px;
+    margin-right: 300px;
+    margin-top: 20px;
+}
+
+#aroundSydney {
+    border: 5px solid black;
+    background-color: khaki;
+    color: black;
+    border-radius: 5px;
+    width: 190px;
+    height: 150px;
+    margin-right: 20px;
+    margin-top: -160px;
+    font-size: 25px;
+}
+
+p {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.divClock {
+    text-align: center;
+}
+
+#timeHeadline {
+    font-size: 32px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: crimson;
+    background-color: #fff;
+}
+
+#inputClock {
+    margin-top: 20px;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    font-size: 40px;
+    border-radius: 10px;
+    background-color: salmon;
+    color: lightgreen;
+}
+
+#inputStart {
+    width: 100px;
+    height: 50px;
+    margin-right: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    color: bisque;
+    background-color: blue;
+}
+
+#inputStart:hover {
+    cursor: pointer;
+    background-color: seagreen;
+}
+
+#inputStop {
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+    color: bisque;
+    background-color: red;
+}
+
+#inputStop:hover {
+    cursor: pointer;
+    background-color: seagreen;
+}
+
+#globalClocks {
+    width: 530px;
+    height: 530px;
+    background-image: url('redAndWhite.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: lightcyan;
+    direction: rtl;
+    border: 2px solid lightblue;
+    border-radius: 20%;
+    margin-left: 60%;
+    margin-top: -580px;
+    font-size: 25px;
+}
+
+#headlineClocks {
+    text-align: center;
+}
+
+#newYorkPara {
+    color: blueviolet;
+    font-size: 25px;
+}
+
+#tokyoPara {
+    color: slateblue;
+    font-size: 25px;
+}
+
+#shanghaiPara {
+    color: sandybrown;
+    font-size: 25px;
+}
+
+#sydneyPara {
+    color: blue;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 576px) {
+
+    #first,
+    #globalClocks {
+        width: 100%;
+        /* Make elements take full width on smaller screens */
+        border-radius: 0;
+        /* Remove rounded corners for smaller screens */
+    }
+
+    #timeContainer {
+        margin: 0 auto;
+        /* Center time container on smaller screens */
+    }
+
+    #aroundNY,
+    #aroundTokyo,
+    #aroundShanghai,
+    #aroundSydney {
+        margin: 10px;
+        /* Adjust margins for better spacing on smaller screens */
+    }
+}

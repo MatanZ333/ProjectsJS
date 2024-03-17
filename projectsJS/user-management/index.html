@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div class="container-first">
+
+        <div class="register-text">
+            <h1>להרשמה</h1>
+            <p>להרשמה למערכת יש להשאיר פרטים</p>
+        </div>
+
+        <form id="regForm" class="register-form">
+            <div class="form-control">
+                <label for="fname">שם פרטי</label>
+                <input type="text" name="fname" id="fname">
+            </div>
+
+            <div class="form-control">
+                <label for="lname">שם משפחה</label>
+                <input type="text" name="lname" id="lname">
+            </div>
+
+            <div class="form-control">
+                <label for="email">אימייל</label>
+                <input type="text" name="email" id="email">
+            </div>
+
+            <div class="form-control">
+                <label for="password">סיסמה</label>
+                <input type="text" name="password" id="password">
+            </div>
+
+            <div class="form-control">
+                <input type="submit" value="הרשמה" id="submitBtn" class="btn btn-primary">
+            </div>
+
+        </form>
+    </div>
+
+    <div class="container-user-list">
+        <div class="users-list-text">
+            <h2>רשימת משתמשים</h2>
+        </div>
+    </div>
+
+    <table class="users-table">
+        <thead>
+            <tr>
+                <td>שם פרטי</td>
+                <td>שם משפחה</td>
+                <td>אימייל</td>
+                <td>סיסמה</td>
+                <td>סטטוס</td>
+                <td>פעולות</td>
+            </tr>
+        </thead>
+    </table>
+
+</body>
+
+</html>
